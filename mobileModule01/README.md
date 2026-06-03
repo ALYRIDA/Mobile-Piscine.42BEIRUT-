@@ -1,103 +1,76 @@
-Piscine Mobile - Module 01: Structure and Logic
-Overview
-This module focuses on building the foundational structure and navigation for a weather application using Flutter. You'll create a responsive app with proper tab navigation and search functionality.
+# Module 01 - Navigation & Structure
 
-Project Structure
-Turn-in directory: mobileModule01
-Project name: weather_app
-Important Note: This project continues in the next module, so thorough completion is essential.
+## Overview
 
-Exercise Breakdown
-Exercise 00: BottomBar
-Objective: Create the main navigation structure with bottom tabs
+Build a multi-screen application with proper navigation patterns. This module focuses on creating a weather application with tab-based navigation, search functionality, and geolocation features.
 
-Requirements:
+## Project Structure
 
-AppBar with search TextField and geolocation button
+**Directory:** `mobileModule01`
+**Project Name:** `weather_app`
 
-BottomBar with 3 tabs:
+Note: This project continues in Module 02. Complete all exercises thoroughly.
 
-"Currently" (default selected tab)
+## Exercises
 
-"Today"
+### Exercise 00 - Bottom Navigation
 
-"Weekly"
+Implement the main navigation structure with tab-based interface.
 
-Responsive design for all devices
+**Objectives:**
+- Create BottomNavigationBar with 3 tabs
+- Implement TabBar and TabBarView widgets
+- Add icon and label to each tab
+- Support both click and swipe navigation
+- Make application responsive across device sizes
 
-BottomBar Specifications:
+**Tabs:**
+- Currently (default)
+- Today
+- Weekly
 
-Each tab must have both a name and an icon
+### Exercise 01 - Top Navigation & Search
 
-Support both click navigation and swipe gestures between tabs
+Implement search and geolocation features in the AppBar.
 
-Tab content should display the tab name as text (placeholder for now)
+**Objectives:**
+- Add search TextField to AppBar
+- Add geolocation button to AppBar
+- Implement search functionality across all tabs
+- Implement geolocation button functionality
+- Manage state across tab navigation
 
-First tab ("Currently") selected by default on app startup
+**Functionality:**
+- Search displays format: `[Tab Name] [Search Term]`
+- Geolocation displays format: `[Tab Name] Geolocation`
+- State persists across all tabs
 
-Flutter Widgets to Use:
+## Technical Requirements
 
-TabBar for TopBar with tabs
+### Responsive Design
+- Support multiple device sizes (phones, tablets)
+- Adaptive layouts for different screen dimensions
+- Proper spacing and padding
 
-TabBarView for different views
+### Navigation
+- Smooth tab transitions
+- Gesture-based swipe navigation
+- Consistent state across screens
+- Proper widget hierarchy
 
-BottomAppBar for BottomBar
+### Code Quality
+- Clean project structure
+- Reusable components
+- Proper state management
+- Meaningful variable and function names
 
-Exercise 01: TopBar
-Objective: Implement search and geolocation functionality
+## Getting Started
 
-Requirements:
-
-Search TextField in AppBar
-
-Geolocation button in AppBar
-
-Both components must be fully functional
-
-Functionality Specifications:
-
-Search TextField:
-
-When text is entered, display format: [Tab Name] + [Entered Text]
-
-Example: In "Currently" tab with search "Paris" → displays "Currently Paris"
-
-Geolocation Button:
-
-When clicked, display format: [Tab Name] + "Geolocation"
-
-Example: In "Today" tab → displays "Today Geolocation"
-
-Display Behavior:
-
-The selected display format (search text or geolocation) should apply to ALL tabs
-
-Content updates dynamically based on user interaction
-
-Technical Requirements
-Responsive Design
-Application must work properly on all device sizes (phones, tablets)
-
-Layout should adapt to different screen dimensions
-
-Navigation
-Smooth transitions between tabs
-
-Both tab clicks and swipe gestures must work
-
-Consistent state management across tabs
-
-Code Structure
-Clean, organized Flutter project structure
-
-Proper use of Flutter widgets and state management
-
-Reusable components where appropriate
-
-Expected UI Flow
-Initial State:
-
-text
+```bash
+cd mobileModule01
+flutter pub get
+flutter run
+```
 AppBar: [Search TextField] [Geolocation Button]
 BottomBar: [Currently⚡] [Today📅] [Weekly📊]
 Content: "Currently" (on Currently tab)

@@ -1,170 +1,82 @@
-🌐 Mobile Piscine – Flutter Learning Journey
+# Mobile Piscine
 
-This repository contains my work and progress through the Mobile Piscine, an intensive introduction to mobile development using Flutter & Dart.
-I have completed Module00, Module01, and part of Module02.
-I plan to continue the rest of the Piscine, but I’m currently too busy — so progress will resume later.
+Flutter & Dart learning curriculum from 42 School.
 
-📁 Modules Completed
-✅ Module00 – Basic Flutter & Widgets
+## Overview
 
-This module introduces the core foundations of Flutter.
+This repository contains exercises and projects completed through the Mobile Piscine program, an intensive introduction to mobile development using Flutter.
 
-What I Learned
+## Modules
 
-Flutter project structure
+### Module 00 - Basic Flutter & Widgets
 
-Hot reload & hot restart
+Introduction to Flutter fundamentals including widgets, state management, and basic navigation.
 
-Basic widgets (Text, Column, Row, etc.)
+**Topics Covered:**
+- Flutter project structure and lifecycle
+- Widget hierarchy and composition
+- Stateless and Stateful widgets
+- Basic layouts (Column, Row, Stack)
+- User input and event handling
 
-Stateless vs Stateful widgets
+**Exercises:**
+- ex00: Basic UI and button implementation
+- ex01: Text state management
+- ex02: Calculator UI layout
+- ex03: Calculator functionality with arithmetic operations
 
-Simple layout building
+### Module 01 - Navigation & Structure
 
-Basic navigation with Navigator
+Building multi-screen applications with proper navigation patterns.
 
-Exercises
+**Topics Covered:**
+- BottomNavigationBar implementation
+- TabBar and TabBarView widgets
+- AppBar with search functionality
+- Responsive design patterns
+- State management across screens
 
-Building simple screens
+**Exercises:**
+- ex00: Bottom navigation structure
+- ex01: Search and geolocation features
 
-Practicing widget composition
+### Module 02 - API & Data Management
 
-Recreating small layouts
+Networking and dynamic data handling with REST APIs.
 
-✅ Module01 – Intermediate Widgets & Navigation
+**Topics Covered:**
+- REST API integration
+- JSON parsing and serialization
+- Async/await and Future handling
+- Error handling and loading states
 
-This module dives deeper into building multi-screen applications.
+## Requirements
 
-What I Learned
+- Flutter SDK (latest stable version)
+- Dart SDK (included with Flutter)
+- IDE: VS Code or Android Studio
 
-Advanced widget combinations
+## Getting Started
 
-Bottom navigation bars
+Each exercise is a standalone Flutter project:
 
-Forms & text input
-
-Managing state inside widgets
-
-Using ListView and builders
-
-Splitting code into multiple files
-
-Exercises
-
-Multi-screen apps
-
-More interactive UIs
-
-Basic structured layouts
-
-🟧 Module02 – API & Data Management (In Progress)
-
-I began this module and completed a large part of it.
-This module focuses on networking and dynamic data.
-
-What I Learned
-
-Fetching data from REST APIs
-
-JSON parsing
-
-Futures and async/await
-
-Building API models
-
-Handling loading & error states
-
-Displaying weather data from Open-Meteo
-
-Project: Weather App
-
-Features I built so far:
-
-Search system
-
-Displaying:
-
-Location (city, region, country)
-
-Temperature
-
-Weather description
-
-Wind speed
-
-Tab system (Current, Today, Weekly)
-
-State preserved across tabs
-
-Still working on:
-
-Hourly forecast list
-
-Weekly forecast list
-
-UI cleaning
-
-Better architecture
-
-📌 Note: I paused here because I’m busy for now, but I will continue later.
-
-📘 Upcoming Modules (Not Completed Yet)
-
-I haven’t completed these yet, but here is what they cover.
-
-📘 Module03 – Advanced Flutter UI
-
-Animations (implicit & explicit)
-
-Custom UI components
-
-Applying themes
-
-CustomPainter & drawing
-
-Making the Weather App visually polished
-
-📘 Module04 – State Management & Architecture
-
-Provider or Riverpod
-
-App-wide shared state
-
-Controllers / notifiers
-
-Clean folder organization
-
-Decoupling UI & logic
-
-📘 Module05 – Final Mobile Project
-
-A full app built from scratch.
-Examples:
-
-Finance tracker
-
-Notes app
-
-Fitness tracker
-
-Recipe browser
-
-Map/weather explorer
-
-🛠️ Tech Stack
-
-Flutter
-
-Dart
-
-Open-Meteo API
-
-VSCode / Android Studio
-
-🚀 How to Run
+```bash
+cd mobileModule00/ex00
+flutter pub get
 flutter run
+```
 
-📌 Final Note
+## Project Structure
 
-I’m currently busy, so development is paused —
-but I will definitely continue and finish the rest of the Mobile Piscine when I have more time.# Mobile-Piscine.42BEIRUT-
+```
+Mobile-Piscine.42BEIRUT/
+├── mobileModule00/
+│   ├── ex00/
+│   ├── ex01/
+│   ├── ex02/
+│   └── ex03/
+├── mobileModule01/
+│   ├── ex00/
+│   └── ex01/
+└── README.md
+```
